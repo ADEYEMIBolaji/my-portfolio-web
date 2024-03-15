@@ -1,15 +1,10 @@
 import { Card } from '../components/Card'
 import { SimpleLayout } from '../components/SimpleLayout'
-import logoAnimaginary from '../images/logos/animaginary.svg'
 import logoCosmos from '../images/logos/cosmos.svg'
 import logoHelioStream from '../images/logos/helio-stream.svg'
 import logoOpenShuttle from '../images/logos/open-shuttle.svg'
-import logoPlanetaria from '../images/logos/planetaria.svg'
-import mintyn from '../images/logos/mintyn.jpeg'
 import optimus from '../images/logos/optimus.jpeg'
 import clane from '../images/logos/clane.jpeg'
-import hydrogen from '../images/logos/hydrogen.jpeg'
-import sabi from '../images/logos/sabi.jpeg'
 
 const projects = [
   {
