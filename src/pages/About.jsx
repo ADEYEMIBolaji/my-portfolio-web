@@ -6,8 +6,8 @@ import {
   LinkedInIcon,
   XIcon,
 } from '../components/SocialIcons'
-import portraitImage from '../images/portrait.jpg'
 import profilepic from '../images/desnond.jpg'
+import { Resume } from './Home'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -103,15 +103,20 @@ export default function About() {
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
-              href="mailto:spencer@planetaria.tech"
+              href="mailto:mudadesmond@gmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              mudadesmond@gmail.com
             </SocialLink>
           </ul>
         </div>
+
       </div>
+      <div className='mt-14'>
+        <Resume />
+      </div>
+
     </Container>
   )
 }

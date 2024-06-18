@@ -46,7 +46,7 @@ const EmailJS = () => {
     emailjs
       .send(
         "service_3s44ptq",
-        "template_5hz8z9n",
+        "template_yxhtkk9",
         formValues,
         {
           publicKey: "V-TIu3xXj3gCnONXe",
@@ -71,7 +71,7 @@ const EmailJS = () => {
   return (
     <form
       action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 sticky top-4"
     >
       <Toaster richColors position="bottom-right" />
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">

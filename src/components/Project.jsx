@@ -3,28 +3,31 @@ import { Card } from '../components/Card'
 import mintyn from '../images/logos/mintyn.jpeg'
 import optimus from '../images/logos/optimus.jpeg'
 import sabi from '../images/logos/sabi.jpeg'
+import project1 from '../images/ml1.webp'
+import project2 from '../images/project2.png'
+import project3 from '../images/project3.png'
 
 const projects = [
   {
-    name: 'Optiverse by Optimus',
+    name: 'Machine Learning Models for Predicting Patient Vital Status',
     description:
-      'Building a digital-driven financial services platform for your specific, personal, corporate abd business financial needs.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: optimus,
+      'This project provides a comprehensive overview of machine learning model development for predicting patient vital status.',
+    link: { href: 'https://github.com/ADEYEMIBolaji/BIP_kaggle_challenge', label: 'Bolaji Adeyemi Exclusive' },
+    logo: project1,
   },
   {
-    name: 'Mintyn Budgeting',
+    name: 'Machine Learning Prediction of Trip Price',
     description:
-      'Helping millions of Mintyn Bank customers manage their finances and achieve their financial goals.',
-    link: { href: '#', label: 'github.com' },
-    logo: mintyn,
+      'The E-Hailing Ride Price Prediction System is a machine learning project aimed at predicting the price of e-hailing rides based on various factors such as pickup location, drop-off location, distance, time of day...',
+    link: { href: 'https://github.com/ADEYEMIBolaji/Predicting_Trip_Price', label: 'Bolaji Adeyemi Exclusive' },
+    logo: project2,
   },
   {
-    name: 'Sabi',
+    name: 'FMCG_Sales_Report',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: sabi,
+      'In this task, we were provided with a synthetic dataset representing the UK Civil Society Almanac, a comprehensive database containing financial data pertaining to charities in the United Kingdom. ',
+    link: { href: 'https://github.com/ADEYEMIBolaji/FMCG_Sales_Report', label: 'Bolaji Adeyemi Exclusive' },
+    logo: project3,
   },
 
 ]
@@ -43,8 +46,9 @@ function LinkIcon(props) {
 const Project = () => {
   return (
     <div>
+      <h2 className='text-[30px] font-bold mb-8 dark:text-white'>Published Projects</h2>
       <ul
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+        className="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2 lg:grid-cols-3"
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
@@ -52,7 +56,7 @@ const Project = () => {
               <img
                 src={project.logo}
                 alt=""
-                className="h-8 w-8"
+                className="h-full w-full rounded-full object-contain"
                 unoptimized
               />
             </div>
@@ -67,6 +71,10 @@ const Project = () => {
           </Card>
         ))}
       </ul>
+      <a href="/projects" className=' mt-12 block '>
+      <Card.Cta>View All Projects</Card.Cta>
+      </a>
+
     </div>
   )
 }

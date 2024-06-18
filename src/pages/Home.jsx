@@ -1,5 +1,4 @@
 
-import { Button } from '../components/Button'
 import { Card } from '../components/Card'
 import { Container } from '../components/Container'
 import {
@@ -8,37 +7,23 @@ import {
   LinkedInIcon,
   XIcon,
 } from '../components/SocialIcons'
-import mintyn from '../images/logos/mintyn.jpeg'
-import optimus from '../images/logos/optimus.jpeg'
-import clane from '../images/logos/clane.jpeg'
+import tundeImg from '../images/bj4.jpg'
+import bj1 from '../images/bj6.jpg'
+import bj2 from '../images/bj1.jpg'
+import gal1 from '../images/gallery1.jpeg'
+import gal2 from '../images/gallery2.jpeg'
+import gal3 from '../images/gallery3.jpeg'
+import gal4 from '../images/gallery4.jpeg'
+import gal5 from '../images/gallery5.jpeg'
+import tradedepot from '../images/logos/tradedepot_logo.jpeg'
+import manchester from '../images/logos/manchesterunilogo.jpeg'
+import borderline from '../images/logos/borderlinesupportuk_logo.jpeg'
 import hydrogen from '../images/logos/hydrogen.jpeg'
 import sabi from '../images/logos/sabi.jpeg'
 import { formatDate } from '../lib/formatDate'
 import Project from '../components/Project'
 import EmailJS from '../components/EmailJs'
 
-function MailIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      />
-      <path
-        d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
-      />
-    </svg>
-  )
-}
 
 function BriefcaseIcon(props) {
   return (
@@ -73,6 +58,33 @@ function ArrowDownIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
+  )
+}
+
+function Photos() {
+  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+
+  return (
+    <div className="mt-16 sm:mt-20">
+      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+        {[gal1, gal2, gal3, gal4, gal5].map((image, imageIndex) => (
+          <div
+            key={image.src}
+            className={`
+              relative aspect-[9/10] h-56 w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800,
+              ${rotations[imageIndex % rotations.length]},
+            `}
+          >
+            <img
+              src={image}
+              alt=""
+              sizes="(min-width: 640px) 18rem, 11rem"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
 
@@ -126,34 +138,6 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function Newsletter() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p>
-      <div className="mt-6 flex">
-        <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          Join
-        </Button>
-      </div>
-    </form>
-  )
-}
 
 function Role({ role }) {
   let startLabel =
@@ -166,8 +150,8 @@ function Role({ role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <img src={role.logo} alt="" className="h-7 w-7" unoptimized />
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center  justify-center border-2 border-red rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+        <img src={role.logo} alt="" className="h-full w-full object-contain rounded-full " unoptimized />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
@@ -192,12 +176,12 @@ function Role({ role }) {
   )
 }
 
-function Resume() {
+export function Resume() {
   let resume = [
     {
-      company: 'Sabi',
-      title: 'Senior Product Designer',
-      logo: sabi,
+      company: 'Research Assistant',
+      title: 'Borderline Support UK CIC',
+      logo: borderline,
       start: '2024',
       end: {
         label: 'Present',
@@ -205,32 +189,32 @@ function Resume() {
       },
     },
     {
-      company: 'Hydrogen',
-      title: 'Senior Product Designer(Design System Manager)',
-      logo: hydrogen,
+      company: 'The University of Manchester',
+      title: 'Data Scientist(Internship)',
+      logo: manchester,
       start: 'Oct-2021',
       end: 'Sep-2023',
     },
     {
-      company: 'Clane',
-      title: 'Senior Product Designer',
-      logo: clane,
-      start: 'Oct-2021',
-      end: 'Sep-2023',
+      company: 'TradeDepot',
+      title: 'Data Analyst',
+      logo: tradedepot,
+      start: 'Jul-2022',
+      end: 'Jul-2023',
     },
     {
-      company: 'Optimus Bank',
-      title: 'Senior Product Designer',
-      logo: optimus,
-      start: 'Jan-2023',
-      end: 'May-2023',
+      company: 'TradeDepot',
+      title: 'City Lauch Support',
+      logo: tradedepot,
+      start: 'Apr-2022',
+      end: 'Jun-2022',
     },
     {
-      company: 'Mintyn ',
-      title: 'Senior Product Designer',
-      logo: mintyn,
-      start: 'Jun-2022',
-      end: 'Dec-2022',
+      company: 'TradeDepot ',
+      title: 'Distribution Data Analyst',
+      logo: tradedepot,
+      start: 'Jul-2021',
+      end: 'Jun-2022',
     },
   ]
 
@@ -238,17 +222,13 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Experience</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
     </div>
   )
 }
@@ -257,48 +237,91 @@ function Resume() {
 export default function Home() {
   return (
     <>
-      <Container className="mt-9 min-h-[70vh]">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          Product designer & innovator, exploring the digital frontier.
-          </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Hey there, I'm Desmond Ajimuda, a passionate product designer and innovator based in Lagos, Nigeria. As the founder of Averti Designer, I'm dedicated to pushing the boundaries of digital innovation and empowering users to navigate the digital landscape effortlessly.
-          </p>
-          <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
-            <SocialLink
-              href="#"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="#"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="#"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
+      <Container className="-mt-20">
+        <div className="flex flex-col items-center gap-6 lg:flex-row">
+          <div className="max-w-2xl md:w-[60%] ">
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+              First Class Msc Data Scientist with a Certificate as an Associate Data Analyst
+            </h1>
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-100">
+            I am Proficient in Python and advanced visualization tools like Seaborn, my analytical strategies led to a 20% reduction in data processing time and a decrease in logistics costs at TradeDepot. These efforts align with my goal to streamline data processes and elevate analytical precision within organizations.
+            </p>
+            <div className="mt-6 flex gap-6">
+              <SocialLink
+                href="http://www.twitter.com/tee_io"
+                aria-label="Follow on X"
+                icon={XIcon}
+              />
+              <SocialLink
+                href="https://www.linkedin.com/in/tundeadeniran"
+                aria-label="Follow on LinkedIn"
+                icon={LinkedInIcon}
+              />
+            </div>
+          </div>
+          <div className="h-[502px] w-[439px] ">
+            <img
+              src={tundeImg}
+              alt="tunde"
+              className="h-full w-full object-cover"
             />
           </div>
         </div>
       </Container>
-      <Container className=''>
+      <div className="my-40">
+        <Photos />
+      </div>
+      <Container className='mt-24 md:mt-28'>
         <Project />
+      </Container>
+      <Container className="my-28">
+        <div className="flex flex-col gap-10 lg:flex-row md:gap-4">
+          <div className="pr-6 md:w-[60%]">
+            <h2 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+              I'm Your Dedicated Product Consultant
+            </h2>
+            <p className="my-4 dark:text-zinc-100 text-zinc-800">
+              I help early-stage start-ups accheive product market fit by rapidly iterating and measuring result. I bring an external veiwpoint that's oftencrucial in helping startupss shape up their product strategy, roadmap, and improve agile development process.
+            </p>
+            <p className='dark:text-zinc-100 text-zinc-800'>
+              My passion for computing dates back to my earliest memories. At
+              the age of 8, after my dad introduced me to his new work laptop at
+              the time (a Compaq LTE 5000 series), I quickly mastered typing on
+              it and wrote my first program.
+            </p>
+            <a href="/about" className="my-4 block">
+              <Card.Cta>Learn more about me</Card.Cta>
+            </a>
+          </div>
+          <div className="flex gap-2">
+            <div className="h-[400px] w-[200px]">
+              <img
+                src={bj1}
+                alt="aboutimg"
+                className="h-full rounded-md object-cover"
+              />
+            </div>
+            <div className="mt-6 h-[400px] w-[200px]">
+              <img
+                src={bj2}
+                alt="aboutimg"
+                className="h-full rounded-md object-cover"
+              />
+            </div>
+          </div>
+          <div></div>
+        </div>
       </Container>
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-            {art.map((article) => (
+            {/* {art.map((article) => (
               <Article key={article.slug} article={article} />
-            ))}
+            ))} */}
+            <Resume />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/* <Newsletter /> */}
             <EmailJS />
-            <Resume />
           </div>
         </div>
       </Container>
