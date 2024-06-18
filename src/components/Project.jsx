@@ -1,8 +1,5 @@
 import React from 'react'
 import { Card } from '../components/Card'
-import mintyn from '../images/logos/mintyn.jpeg'
-import optimus from '../images/logos/optimus.jpeg'
-import sabi from '../images/logos/sabi.jpeg'
 import project1 from '../images/ml1.webp'
 import project2 from '../images/project2.png'
 import project3 from '../images/project3.png'

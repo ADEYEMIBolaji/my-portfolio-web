@@ -2,8 +2,6 @@
 import { Card } from '../components/Card'
 import { Container } from '../components/Container'
 import {
-  GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
   XIcon,
 } from '../components/SocialIcons'
@@ -18,9 +16,6 @@ import gal5 from '../images/gallery5.jpeg'
 import tradedepot from '../images/logos/tradedepot_logo.jpeg'
 import manchester from '../images/logos/manchesterunilogo.jpeg'
 import borderline from '../images/logos/borderlinesupportuk_logo.jpeg'
-import hydrogen from '../images/logos/hydrogen.jpeg'
-import sabi from '../images/logos/sabi.jpeg'
-import { formatDate } from '../lib/formatDate'
 import Project from '../components/Project'
 import EmailJS from '../components/EmailJs'
 
@@ -43,19 +38,6 @@ function BriefcaseIcon(props) {
       <path
         d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
         className="stroke-zinc-400 dark:stroke-zinc-500"
-      />
-    </svg>
-  )
-}
-
-function ArrowDownIcon(props) {
-  return (
-    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-      <path
-        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
       />
     </svg>
   )
@@ -85,48 +67,6 @@ function Photos() {
         ))}
       </div>
     </div>
-  )
-}
-
-const art = [
-  {
-    title:
-      'Bento Africa — Unsolicited Redesign',
-    slug: 'https://medium.com/design-bootcamp/bento-africa-unsolicited-redesign-48893e148cf0?source=user_profile---------2----------------------------',
-    description:
-      'A story of how i redesigned a cloud-based salaries and benefits solution App. About Several months ago, my employer switch our salary payment solution to Bento, I finally set up a Bento Africa account and...',
-    date: '2022-04-10',
-  },
-  {
-    title: 'Password Recovery Flow for a Cryptocurrency App',
-    slug: 'https://medium.com/design-bootcamp/password-recovery-flow-for-a-cryptocurrency-app-b3ba68f448ae?source=user_profile---------0----------------------------',
-    description:
-      'Background A cryptocurrency is a digital or virtual currency that is secured by cryptography, which makes it nearly impossible to counterfeit or double-spend. Many cryptocurrencies are decentralized...',
-    date: '2022-05-02',
-  },
-  {
-    title: 'In-app card request flow for UBA',
-    slug: 'https://medium.com/design-bootcamp/in-app-card-request-flow-for-uba-9d0d2153726f?source=user_profile---------1----------------------------',
-    description:
-      'This is a short story about how I attempted to design an In-app card request flow for a traditional bank. Background Since the emergence of mobile-only banking and mobile money operators or agency banking...',
-    date: '2022-05-02',
-  },
-  
-]
-
-function Article({ article }) {
-  
-  return (
-    <Card as="article">
-      <Card.Title href={`${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
-    </Card>
   )
 }
 

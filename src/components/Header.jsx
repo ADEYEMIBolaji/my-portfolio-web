@@ -3,7 +3,6 @@ import { Fragment, useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom';
 import { Popover, Transition } from '@headlessui/react'
 import { Container } from '../components/Container'
-import profilepic from '../images/desnond.jpg'
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 function CloseIcon(props) {
@@ -32,17 +31,6 @@ function ChevronDownIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
-
-
-function MobileNavItem({ href, children }) {
-  return (
-    <li>
-      <Popover.Button href={href} className="block py-2">
-        {children}
-      </Popover.Button>
-    </li>
   )
 }
 
