@@ -3,6 +3,9 @@ import { Card } from '../components/Card'
 import project1 from '../images/ml1.webp'
 import project2 from '../images/project2.png'
 import project3 from '../images/project3.png'
+import project4 from '../images/make-06-00004-g004.png'
+import project5 from '../images/predictive.jpeg'
+import { useLocation, useNavigate, useNavigation } from 'react-router-dom'
 
 const projects = [
   {
@@ -26,10 +29,26 @@ const projects = [
     link: { href: 'https://github.com/ADEYEMIBolaji/FMCG_Sales_Report', label: 'Bolaji Adeyemi Exclusive' },
     logo: project3,
   },
+  {
+    name: 'Loan Approval with Machine Learning Prediction',
+    description:
+      "Welcome to the Loan Approval Predictions project! Below you'll find essential information on how to navigate through the project, understand the data, and utilize the predictive model for determining loan eligibility..... ",
+    link: { href: 'https://github.com/ADEYEMIBolaji/Loan_Approval', label: 'Bolaji Adeyemi Exclusive' },
+    logo: project4,
+  },
+  {
+    name: 'Customers Churn analysis and prediction using Random Forest Classifier',
+    description:
+      'Each row represents a customer, each column contains customer’s attributes described in the document..... ',
+    link: { href: 'https://www.linkedin.com/posts/adeyemiqbolaji_telco-customer-churn-activity-7006814973565755392-UzDj/?utm_source=share&utm_medium=member_desktop', label: 'Bolaji Adeyemi Exclusive' },
+    logo: project5,
+  },
 
 ]
 
+
 function LinkIcon(props) {
+
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path
@@ -41,13 +60,16 @@ function LinkIcon(props) {
 }
 
 const Project = () => {
+    const location = useLocation()
+
+const displayedItems = location.pathname.includes('projects') ? projects : projects.slice(0, 3);
   return (
     <div>
       <h2 className='text-[30px] font-bold mb-8 dark:text-white'>Published Projects</h2>
       <ul
         className="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2 lg:grid-cols-3"
       >
-        {projects.map((project) => (
+        {displayedItems.map((project) => (
           <Card as="li" key={project.name}>
             <div className="relative z-10 flex h-40 w-full items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <img

@@ -79,7 +79,7 @@ const EmailJS = () => {
         <span className="ml-3">Send me a message</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        You can reach out to me via my email - <b>mudadesmond@gmail.com</b>{' '}
+        You can reach out to me via my email - <b>bolajiadewunmi24@gmail.com</b>{' '}
         at any time.
       </p>
       <div className="mt-6 flex">

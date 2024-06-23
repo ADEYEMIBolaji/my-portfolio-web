@@ -18,6 +18,7 @@ import manchester from '../images/logos/manchesterunilogo.jpeg'
 import borderline from '../images/logos/borderlinesupportuk_logo.jpeg'
 import Project from '../components/Project'
 import EmailJS from '../components/EmailJs'
+import Certifications from '../components/Certifications'
 
 
 function BriefcaseIcon(props) {
@@ -214,7 +215,7 @@ export default function Home() {
       <Container className='mt-24 md:mt-28'>
         <Project />
       </Container>
-      <Container className="my-28">
+      <Container className="mt-28">
         <div className="flex flex-col gap-10 lg:flex-row md:gap-4">
           <div className="pr-6 md:w-[60%]">
             <h2 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
@@ -250,12 +251,14 @@ export default function Home() {
           <div></div>
         </div>
       </Container>
+      <Container className="mt-14 md:mt-10">
+        <div className="">
+          <Certifications />
+        </div>
+      </Container>
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-            {/* {art.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))} */}
             <Resume />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
