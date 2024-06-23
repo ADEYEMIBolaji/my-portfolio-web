@@ -7,11 +7,11 @@ import {
 } from '../components/SocialIcons'
 import tundeImg from '../images/bj4.jpg'
 import bj1 from '../images/bj6.jpg'
-import bj2 from '../images/bj1.jpg'
+import bj2 from '../images/bj2.jpg'
 import gal1 from '../images/gallery1.jpeg'
 import gal2 from '../images/gallery2.jpeg'
 import gal3 from '../images/gallery3.jpeg'
-import gal4 from '../images/gallery4.jpeg'
+import gal4 from '../images/gallery4.jpg'
 import gal5 from '../images/gallery5.jpeg'
 import tradedepot from '../images/logos/tradedepot_logo.jpeg'
 import manchester from '../images/logos/manchesterunilogo.jpeg'
@@ -181,7 +181,7 @@ export default function Home() {
         <div className="flex flex-col items-center gap-6 lg:flex-row">
           <div className="max-w-2xl md:w-[60%] ">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-              First Class Msc Data Scientist with a Certificate as an Associate Data Analyst
+              Experienced Data Scientist with Technical Background and an Msc
             </h1>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-100">
             I am Proficient in Python and advanced visualization tools like Seaborn, my analytical strategies led to a 20% reduction in data processing time and a decrease in logistics costs at TradeDepot. These efforts align with my goal to streamline data processes and elevate analytical precision within organizations.
@@ -218,16 +218,14 @@ export default function Home() {
         <div className="flex flex-col gap-10 lg:flex-row md:gap-4">
           <div className="pr-6 md:w-[60%]">
             <h2 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-              I'm Your Dedicated Product Consultant
+              I'm Your Dedicated Data Scientist
             </h2>
             <p className="my-4 dark:text-zinc-100 text-zinc-800">
-              I help early-stage start-ups accheive product market fit by rapidly iterating and measuring result. I bring an external veiwpoint that's oftencrucial in helping startupss shape up their product strategy, roadmap, and improve agile development process.
+              I am an adaptable and collaborative data enthusiast with a solid foundation in data science, statistical experimentation, and data analysis.
             </p>
             <p className='dark:text-zinc-100 text-zinc-800'>
-              My passion for computing dates back to my earliest memories. At
-              the age of 8, after my dad introduced me to his new work laptop at
-              the time (a Compaq LTE 5000 series), I quickly mastered typing on
-              it and wrote my first program.
+              I hold a degree in Data Science from Manchester Metropolitan University, where I graduated with first class honors, and I am a certified Associate Data Analyst. I have also earned certifictions from Google Cloud Platform, including core infrastructure fundamentals.
+
             </p>
             <a href="/about" className="my-4 block">
               <Card.Cta>Learn more about me</Card.Cta>

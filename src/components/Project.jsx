@@ -15,14 +15,14 @@ const projects = [
   {
     name: 'Machine Learning Prediction of Trip Price',
     description:
-      'The E-Hailing Ride Price Prediction System is a machine learning project aimed at predicting the price of e-hailing rides based on various factors such as pickup location, drop-off location, distance, time of day...',
+      'The E-Hailing Ride Price Prediction System is a machine learning project aimed at predicting the price of e-hailing rides based on various factors such as pickup location...',
     link: { href: 'https://github.com/ADEYEMIBolaji/Predicting_Trip_Price', label: 'Bolaji Adeyemi Exclusive' },
     logo: project2,
   },
   {
     name: 'FMCG_Sales_Report',
     description:
-      'In this task, we were provided with a synthetic dataset representing the UK Civil Society Almanac, a comprehensive database containing financial data pertaining to charities in the United Kingdom. ',
+      'In this task, we were provided with a synthetic dataset representing the UK Civil Society Almanac, a comprehensive database containing financial data pertaining..... ',
     link: { href: 'https://github.com/ADEYEMIBolaji/FMCG_Sales_Report', label: 'Bolaji Adeyemi Exclusive' },
     logo: project3,
   },
@@ -49,11 +49,11 @@ const Project = () => {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative z-10 flex h-40 w-full items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <img
                 src={project.logo}
                 alt=""
-                className="h-full w-full rounded-full object-contain"
+                className="h-full w-full"
                 unoptimized
               />
             </div>
