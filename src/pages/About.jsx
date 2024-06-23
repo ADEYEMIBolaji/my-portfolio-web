@@ -6,7 +6,6 @@ import {
   LinkedInIcon,
   XIcon,
 } from '../components/SocialIcons'
-import profilepic from '../images/desnond.jpg'
 import profilephoto from "../images/bj5.jpg"
 import { Resume } from './Home'
 

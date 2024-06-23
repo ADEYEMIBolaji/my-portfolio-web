@@ -5,7 +5,7 @@ import project2 from '../images/project2.png'
 import project3 from '../images/project3.png'
 import project4 from '../images/make-06-00004-g004.png'
 import project5 from '../images/predictive.jpeg'
-import { useLocation, useNavigate, useNavigation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 const projects = [
   {

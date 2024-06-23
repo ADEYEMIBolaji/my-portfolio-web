@@ -2,8 +2,7 @@
 import { Card } from '../components/Card'
 import { Container } from '../components/Container'
 import {
-  LinkedInIcon,
-  XIcon,
+  LinkedInIcon, GitHubIcon, InstagramIcon
 } from '../components/SocialIcons'
 import tundeImg from '../images/bj4.jpg'
 import bj1 from '../images/bj6.jpg'
@@ -189,12 +188,17 @@ export default function Home() {
             </p>
             <div className="mt-6 flex gap-6">
               <SocialLink
-                href="http://www.twitter.com/tee_io"
-                aria-label="Follow on X"
-                icon={XIcon}
+                href="https://github.com/ADEYEMIBolaji"
+                aria-label="Follow on Github"
+                icon={GitHubIcon}
               />
               <SocialLink
-                href="https://www.linkedin.com/in/tundeadeniran"
+                href="https://www.instagram.com/_abolaji_ade?igsh=MTI3bWVmandtdnJ3Mg%3D%3D&utm_source=qr"
+                aria-label="Follow on Instagram"
+                icon={InstagramIcon}
+              />
+              <SocialLink
+                href="https://www.linkedin.com/in/adeyemiqbolaji/"
                 aria-label="Follow on LinkedIn"
                 icon={LinkedInIcon}
               />
