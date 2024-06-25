@@ -2,7 +2,7 @@ import React from 'react'
 import { Card } from '../components/Card'
 import project1 from '../images/cancer-cell-rendering-in-purple.jpg'
 import project2 from '../images/biz-110503-nissantaxi.webp'
-import project3 from '../images/project3.png'
+import project3 from '../images/HRD_share_image.png'
 import project4 from '../images/tripimg.jpg'
 import project5 from '../images/predictive.jpeg'
 import { useLocation } from 'react-router-dom'
@@ -23,10 +23,10 @@ const projects = [
     logo: project2,
   },
   {
-    name: 'FMCG_Sales_Report',
+    name: 'The_Almanac_NCVO',
     description:
-      'In this task, we were provided with a synthetic dataset representing the UK Civil Society Almanac, a comprehensive database containing financial data pertaining..... ',
-    link: { href: 'https://github.com/ADEYEMIBolaji/FMCG_Sales_Report', label: 'Bolaji Adeyemi Exclusive' },
+      'The primary objective of this task, documented within this repository, was to perform data wrangling and analysis on the synthetic dataset to extract valuable insights into the financial landscape of charities.. ',
+    link: { href: 'https://github.com/ADEYEMIBolaji/The_Almanac_NCVO', label: 'Bolaji Adeyemi Exclusive' },
     logo: project3,
   },
   {
