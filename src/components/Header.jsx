@@ -79,7 +79,6 @@ function MobileNavigation(props) {
                 <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/projects">Projects</a>
-                <a href="/articles">Articles</a>
               </ul>
             </nav>
           </Popover.Panel>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from '../components/Card'
-import project1 from '../images/cancer-cell-rendering-in-purple.jpg'
+import project1 from '../images/trend.jpg'
 import project2 from '../images/biz-110503-nissantaxi.webp'
 import project3 from '../images/HRD_share_image.png'
 import project4 from '../images/tripimg.jpg'
@@ -13,7 +13,7 @@ const projects = [
     description:
       'This project provides a comprehensive overview of machine learning model development for predicting patient vital status.',
     link: { href: 'https://github.com/ADEYEMIBolaji/BIP_kaggle_challenge', label: 'Bolaji Adeyemi Exclusive' },
-    logo: project1,
+    logo: project3,
   },
   {
     name: 'Machine Learning Prediction of Trip Price',
@@ -27,7 +27,7 @@ const projects = [
     description:
       'The primary objective of this task, documented within this repository, was to perform data wrangling and analysis on the synthetic dataset to extract valuable insights into the financial landscape of charities.. ',
     link: { href: 'https://github.com/ADEYEMIBolaji/The_Almanac_NCVO', label: 'Bolaji Adeyemi Exclusive' },
-    logo: project3,
+    logo: project1,
   },
   {
     name: 'Loan Approval with Machine Learning Prediction',
