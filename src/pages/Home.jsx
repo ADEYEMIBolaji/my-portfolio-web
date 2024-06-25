@@ -5,11 +5,11 @@ import {
   LinkedInIcon, GitHubIcon, InstagramIcon
 } from '../components/SocialIcons'
 import tundeImg from '../images/bj4.jpg'
-import bj1 from '../images/bj6.jpg'
+import bj1 from '../images/gallery4.jpg'
 import bj2 from '../images/bj2.jpg'
 import gal1 from '../images/gallery1.jpeg'
 import gal2 from '../images/gallery2.jpeg'
-import gal3 from '../images/gallery3.jpeg'
+import gal3 from '../images/beejay.jpg'
 import gal4 from '../images/gallery4.jpg'
 import gal5 from '../images/gallery5.jpeg'
 import tradedepot from '../images/logos/tradedepot_logo.jpeg'
@@ -184,7 +184,7 @@ export default function Home() {
               Experienced Data Scientist with Technical Background and an Msc
             </h1>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-100">
-            I am Proficient in Python and advanced visualization tools like Seaborn, my analytical strategies led to a 20% reduction in data processing time and a decrease in logistics costs at TradeDepot. These efforts align with my goal to streamline data processes and elevate analytical precision within organizations.
+            Adaptable and collaborative data enthusiast with a degree in Data Science and certifications with Google Skill boost (GCP). Skilled in data management, statistical experimentation, Power BI and Python-based analysis. Known for fostering teamwork and adaptability, committed to delivering impactful solutions. Excited to apply a blend of technical expertise and collaborative spirit to contribute effectively to roles emphasising analytical sense and creative problem-solving.
             </p>
             <div className="mt-6 flex gap-6">
               <SocialLink

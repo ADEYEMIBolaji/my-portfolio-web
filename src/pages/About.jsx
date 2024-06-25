@@ -76,16 +76,13 @@ I have also earned certifications from Google Cloud Platform, including Core Inf
         </div>
         <div className="lg:pl-20">
           <ul>
-            <SocialLink href="#" icon={XIcon}>
-              Follow on X
-            </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+            <SocialLink href="https://www.instagram.com/_abolaji_ade?igsh=MTI3bWVmandtdnJ3Mg%3D%3D&utm_source=qr" icon={InstagramIcon} className="mt-4">
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <SocialLink href="https://github.com/ADEYEMIBolaji" icon={GitHubIcon} className="mt-4">
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink href="https://www.linkedin.com/in/adeyemiqbolaji/" icon={LinkedInIcon} className="mt-4">
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
@@ -93,7 +90,7 @@ I have also earned certifications from Google Cloud Platform, including Core Inf
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              mudadesmond@gmail.com
+              bolajiadewunmi24@gmail.com
             </SocialLink>
           </ul>
         </div>

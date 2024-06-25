@@ -1,9 +1,9 @@
 import React from 'react'
 import { Card } from '../components/Card'
-import project1 from '../images/ml1.webp'
-import project2 from '../images/project2.png'
+import project1 from '../images/cancer-cell-rendering-in-purple.jpg'
+import project2 from '../images/biz-110503-nissantaxi.webp'
 import project3 from '../images/project3.png'
-import project4 from '../images/make-06-00004-g004.png'
+import project4 from '../images/tripimg.jpg'
 import project5 from '../images/predictive.jpeg'
 import { useLocation } from 'react-router-dom'
 
@@ -90,9 +90,9 @@ const displayedItems = location.pathname.includes('projects') ? projects : proje
           </Card>
         ))}
       </ul>
-      <a href="/projects" className=' mt-12 block '>
+      {location.pathname.includes('projects') ? null : <a href="/projects" className=' mt-12 block '>
       <Card.Cta>View All Projects</Card.Cta>
-      </a>
+      </a>}
 
     </div>
   )
