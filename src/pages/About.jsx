@@ -4,7 +4,6 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
-  XIcon,
 } from '../components/SocialIcons'
 import profilephoto from "../images/bj5.jpg"
 import { Resume } from './Home'
