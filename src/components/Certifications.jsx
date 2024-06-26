@@ -65,11 +65,11 @@ export default function Certifications() {
   return (
     <div className="w-full text-zinc-800 dark:text-zinc-100">
       <div className="mx-auto max-w-7xl px-4 pb-24 pt-10 sm:px-6 lg:px-1">
-        <div className="rounded-2xl px-6 pb-16 sm:p-16">
+        <div className="rounded-2xl px-6 pb-16">
           <div className="mx-auto max-w-xl lg:max-w-none">
-            <div className="text-center">
-              <img className="mx-auto h-16 w-16" src="https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg" alt="" />
-              <h2 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-zinc-100">
+            <div className="text-center mx-auto">
+              {/* <img className="mx-auto h-16 w-16" src="https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg" alt="" /> */}
+              <h2 className="text-4xl font-bold text-center inline-block tracking-tight text-gray-900 dark:text-zinc-100">
                 Certifications
               </h2>
             </div>
