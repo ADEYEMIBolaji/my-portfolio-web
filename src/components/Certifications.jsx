@@ -3,7 +3,12 @@ import datacamp from '../images/datacampinc_logo.jpeg'
 import linkedIn from '../images/linkedin_logo.jpeg'
 import utivalogo from '../images/utiva_logo.jpeg'
 
-const incentives = [
+const incentives = [ {
+    name: 'TensorFlow on Google Cloud',
+    imageSrc: googlecloud,
+    description: "Issued: June 2024",
+    credentials: "ID 9605961",
+  },
   {
     name: 'Launching into Machine Learning',
     imageSrc: googlecloud,
