@@ -47,10 +47,11 @@ const projects = [
  {
     name: 'Charity Campaign and Donation Dashboard',
     description:
-      'This Dataset used  was created using a faker library to create a synthetic dataset using python, stored on local PC and Power BI was used to create the dashboard using DAX for special measures',
+      'The Dataset used  was created using a faker library to create a synthetic dataset using python, stored on local PC and Power BI was used to create the dashboard using DAX for special measures',
     link: { href: 'https://github.com/ADEYEMIBolaji/Campaign-Donation-Dashboard/tree/master', label: 'Bolaji Adeyemi Exclusive' },
     logo: project6,
   },
+
 ]
 
 
