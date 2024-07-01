@@ -5,6 +5,7 @@ import project2 from '../images/biz-110503-nissantaxi.webp'
 import project3 from '../images/HRD_share_image.png'
 import project4 from '../images/tripimg.jpg'
 import project5 from '../images/predictive.jpeg'
+import project6 from '../images/Dasboard.jpg'
 import { useLocation } from 'react-router-dom'
 
 const projects = [
@@ -43,7 +44,13 @@ const projects = [
     link: { href: 'https://www.linkedin.com/posts/adeyemiqbolaji_telco-customer-churn-activity-7006814973565755392-UzDj/?utm_source=share&utm_medium=member_desktop', label: 'Bolaji Adeyemi Exclusive' },
     logo: project5,
   },
-
+ {
+    name: 'Charity Campaign and Donation Dashboard',
+    description:
+      'This Dataset used  was created using a faker library to create a synthetic dataset using python, stored on local PC and Power BI was used to create the dashboard using DAX for special measures',
+    link: { href: 'https://github.com/ADEYEMIBolaji/Campaign-Donation-Dashboard/tree/master', label: 'Bolaji Adeyemi Exclusive' },
+    logo: project6,
+  },
 ]
 
 
