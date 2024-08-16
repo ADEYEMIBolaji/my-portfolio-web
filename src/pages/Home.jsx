@@ -18,7 +18,7 @@ import borderline from '../images/logos/borderlinesupportuk_logo.jpeg'
 import Project from '../components/Project'
 import EmailJS from '../components/EmailJs'
 import Certifications from '../components/Certifications'
-
+import KidneyResearchUK from '../images/logos/KidneyResearchUK.jpeg'
 
 function BriefcaseIcon(props) {
   return (
@@ -119,12 +119,23 @@ function Role({ role }) {
 export function Resume() {
   let resume = [
     {
-      company: 'Research Assistant',
-      title: 'Borderline Support UK CIC',
-      logo: borderline,
-      start: '2024',
+      company: 'Kidney Research UK',
+      title: 'Data Analyst',
+      logo: KidneyResearchUK,
+      start: 'Aug-2024',
       end: {
         label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
+
+{
+      company: 'Borderline Support UK CIC',
+      title: 'Research Assistant',
+      logo: borderline,
+      start: 'May-2024',
+      end: {
+        label: 'Aug-2024',
         dateTime: new Date().getFullYear().toString(),
       },
     },
