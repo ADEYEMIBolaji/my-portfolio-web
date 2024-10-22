@@ -4,8 +4,8 @@ import project1 from '../images/trend.jpg'
 import project2 from '../images/biz-110503-nissantaxi.webp'
 import project3 from '../images/HRD_share_image.png'
 import project4 from '../images/tripimg.jpg'
-import project5 from '../images/predictive.jpeg'
 import project6 from '../images/Dasboard.jpg'
+import project7 from '../images/StockPrediction.jpg'
 import { useLocation } from 'react-router-dom'
 
 const projects = [
@@ -44,12 +44,21 @@ const projects = [
     link: { href: 'https://www.linkedin.com/posts/adeyemiqbolaji_telco-customer-churn-activity-7006814973565755392-UzDj/?utm_source=share&utm_medium=member_desktop', label: 'Bolaji Adeyemi Exclusive' },
     logo: project5,
   },
+
  {
     name: 'Charity Campaign and Donation Dashboard',
     description:
       'The Dataset used  was created using a faker library to create a synthetic dataset using python, stored on local PC and Power BI was used to create the dashboard using DAX for special measures',
     link: { href: 'https://github.com/ADEYEMIBolaji/Campaign-Donation-Dashboard/tree/master', label: 'Bolaji Adeyemi Exclusive' },
     logo: project6,
+  },
+
+  {
+    name: 'Stock Price Prediction for Google, Amazon, Microsoft, Tesla, and Apple Using Machine Learning',
+    description:
+      ' This project aims to develop a robust machine learning model to predict the closing stock prices of major tech companies—Google, Amazon, Microsoft, Tesla, and Apple—using advanced predictive algorithms. Leveraging Long Short-Term Memory (LSTM) networks for sequential data analysis, Support Vector Machines (SVM) for classification, Random Forest for decision tree-based predictions, and the ARIMA model for time series forecasting, we will analyse historical stock price data and forecast future trends. The goal is to provide accurate and reliable stock price predictions, using Key Technical Indicator.',
+    link: { href: 'https://github.com/ADEYEMIBolaji/StockPrediction', label: 'Bolaji Adeyemi Exclusive' },
+    logo: project7,
   },
 
 ]
