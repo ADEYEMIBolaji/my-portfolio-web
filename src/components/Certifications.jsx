@@ -2,8 +2,15 @@ import googlecloud from '../images/Logo-google-cloud-icon-vector-PNG (1).png'
 import datacamp from '../images/datacampinc_logo.jpeg'
 import linkedIn from '../images/linkedin_logo.jpeg'
 import utivalogo from '../images/utiva_logo.jpeg'
+import lean_six from '../images/lean_six.jpg'
 
 const incentives = [ {
+    name: 'Lean Six Sigma',
+    imageSrc: lean_six,
+    description: "Issued: April 2025",
+    credentials: "",
+  },
+ {
     name: 'TensorFlow on Google Cloud',
     imageSrc: googlecloud,
     description: "Issued: June 2024",
