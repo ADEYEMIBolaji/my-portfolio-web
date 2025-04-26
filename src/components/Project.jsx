@@ -8,15 +8,15 @@ import project5 from '../images/predictive.jpeg'
 import project6 from '../images/Dasboard.jpg'
 import project7 from '../images/StockPrediction.jpg'
 import project8 from '../images/anomaly.jpeg'
-
 import { useLocation } from 'react-router-dom'
 
+
 const projects = [
-  {
+   {
     name: 'Africa Foodstuff Anomaly detection',
     description:
       'African Foodstore Anomaly Detection App is a machine learning project that detects unusual transaction patterns in an African food e-commerce store. It uses synthetic data generation, multiple anomaly detection models (Isolation Forest, AutoEncoder, One-Class SVM), and a Streamlit app that allows users to upload transaction data, identify anomalies, and download clean results in real time.',
- link: { href: 'https://github.com/ADEYEMIBolaji/african-foodstore-anomaly', label: 'Bolaji Adeyemi Exclusive' },
+    link: { href: 'https://github.com/ADEYEMIBolaji/african-foodstore-anomaly', label: 'Bolaji Adeyemi Exclusive' },
     logo: project8,
   },
   {
@@ -25,7 +25,7 @@ const projects = [
       'This project provides a comprehensive overview of machine learning model development for predicting patient vital status.',
     link: { href: 'https://github.com/ADEYEMIBolaji/BIP_kaggle_challenge', label: 'Bolaji Adeyemi Exclusive' },
     logo: project3,
-  },,
+  },
 
   {
     name: 'Stock Price Prediction for Google, Amazon, Microsoft, Tesla, and Apple Using Machine Learning',
@@ -68,12 +68,10 @@ const projects = [
     description:
       'The Dataset used  was created using a faker library to create a synthetic dataset using python, stored on local PC and Power BI was used to create the dashboard using DAX for special measures',
     link: { href: 'https://github.com/ADEYEMIBolaji/Campaign-Donation-Dashboard/tree/master', label: 'Bolaji Adeyemi Exclusive' },
-    logo: project6,
-  },
+    logo: project6
+  }
+];
 
-
-
-]
 
 
 function LinkIcon(props) {
