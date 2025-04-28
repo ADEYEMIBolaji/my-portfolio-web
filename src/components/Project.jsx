@@ -8,11 +8,19 @@ import project5 from '../images/predictive.jpeg'
 import project6 from '../images/Dasboard.jpg'
 import project7 from '../images/StockPrediction.jpg'
 import project8 from '../images/anomaly.jpeg'
+import project9 from '../images/Car_Price_Prediction.png'
 import { useLocation } from 'react-router-dom'
 
 
 const projects = [
    {
+    name: 'Car Price Prediction App',
+    description:
+      'An interactive machine learning web application built with Streamlit to predict car prices based on features like brand, model, year, mileage, fuel type, body type, and vehicle condition. Trained using Random Forest, XGBoost, and Decision Tree models with hyperparameter tuning and deployed for real-time predictions.',
+    link: { href: 'https://github.com/ADEYEMIBolaji/Car_Price_Prediction', label: 'Bolaji Adeyemi Exclusive' },
+    logo: project9,
+  },
+  {
     name: 'Africa Foodstuff Anomaly detection',
     description:
       'African Foodstore Anomaly Detection App is a machine learning project that detects unusual transaction patterns in an African food e-commerce store. It uses synthetic data generation, multiple anomaly detection models (Isolation Forest, AutoEncoder, One-Class SVM), and a Streamlit app that allows users to upload transaction data, identify anomalies, and download clean results in real time.',
