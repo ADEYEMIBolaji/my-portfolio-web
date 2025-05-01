@@ -9,7 +9,7 @@ import project6 from '../images/Dasboard.jpg'
 import project7 from '../images/StockPrediction.jpg'
 import project8 from '../images/anomaly.jpeg'
 import project9 from '../images/Car_Price_Prediction.png'
-import project10 from '../images/Predicted1.jpg'
+import project10 from '../images/BiteWise white.png'
 import { useLocation } from 'react-router-dom'
 
 
@@ -104,7 +104,7 @@ function LinkIcon(props) {
 const Project = () => {
     const location = useLocation()
 
-const displayedItems = location.pathname.includes('projects') ? projects : projects.slice(0, 3);
+const displayedItems = location.pathname.includes('projects') ? projects : projects.slice(0, 6);
   return (
     <div>
       <h2 className='text-[30px] font-bold mb-8 dark:text-white'>Published Projects</h2>
