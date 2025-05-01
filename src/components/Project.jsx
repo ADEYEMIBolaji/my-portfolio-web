@@ -9,11 +9,18 @@ import project6 from '../images/Dasboard.jpg'
 import project7 from '../images/StockPrediction.jpg'
 import project8 from '../images/anomaly.jpeg'
 import project9 from '../images/Car_Price_Prediction.png'
+import project10 from '../images/Predicted1.jpg'
 import { useLocation } from 'react-router-dom'
 
 
 const projects = [
-   {
+  {
+    name: 'BiteWise (Use of API)',
+    description: 'BiteWise is a Streamlit-based web app that lets users analyse their meals or packaged foods using natural language input or barcode lookup. Powered by the Nutritionix API, it delivers instant calorie and macronutrient breakdowns, along with wellness insights like "low fat" or "high protein" — all in a clean, dark-mode UI.',
+    link: { href: 'https://github.com/ADEYEMIBolaji/BiteWise_App', label: 'Bolaji Adeyemi Exclusive' },
+    logo: project10,
+  },
+  {
     name: 'Car Price Prediction App',
     description:
       'An interactive machine learning web application built with Streamlit to predict car prices based on features like brand, model, year, mileage, fuel type, body type, and vehicle condition. Trained using Random Forest, XGBoost, and Decision Tree models with hyperparameter tuning and deployed for real-time predictions.',
