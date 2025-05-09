@@ -10,16 +10,24 @@ import project7 from '../images/StockPrediction.jpg'
 import project8 from '../images/anomaly.jpeg'
 import project9 from '../images/Car_Price_Prediction.png'
 import project10 from '../images/BiteWise white.png'
+import project11 from '../images/Transplant Analysis.jpg'
 import { useLocation } from 'react-router-dom'
 
 
 const projects = [
   {
+    name: 'Organ Transplant and Donor Demography Dashboard (2023/24)',
+    description: 'A Power BI dashboard analysing organ transplants and donor demographics across the UK (2023/24). It visualizes transplant activity, waiting lists, and deceased donor profiles using clean data modeling, DAX measures, and interactive filters to support data-driven healthcare decisions.',
+    link: { href: 'https://github.com/ADEYEMIBolaji/Organ-Transplant-Analysis_-NHS-report-23-24-#', label: 'Bolaji Adeyemi Exclusive' },
+    logo: project11,
+  },
+{
     name: 'BiteWise (Use of API)',
     description: 'BiteWise is a Streamlit-based web app that lets users analyse their meals or packaged foods using natural language input or barcode lookup. Powered by the Nutritionix API, it delivers instant calorie and macronutrient breakdowns, along with wellness insights like "low fat" or "high protein" — all in a clean, dark-mode UI.',
     link: { href: 'https://github.com/ADEYEMIBolaji/BiteWise_App', label: 'Bolaji Adeyemi Exclusive' },
     logo: project10,
   },
+
   {
     name: 'Car Price Prediction App',
     description:
